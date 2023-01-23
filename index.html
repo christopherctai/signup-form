@@ -14,7 +14,7 @@
             <img src="/images/icf_logo.png" alt="ICF Logo" class="logo-image">
             <div class="banner-text">Immanuel Christian Fellowship</div>
         </div>
-        <div class="credit">Photo by <a href="#" class="credit-author">Filip Zrnzević</a> on <a href="#" class="credit-author">Unsplash</a></div>
+        <div class="credit">Photo by <a href="#" class="link credit-author">Filip Zrnzević</a> on <a href="#" class="link credit-author">Unsplash</a></div>
     </div>
     <div class="form"> 
         <div class="heading">
@@ -26,46 +26,47 @@
             </div>
         </div>
 
-        <form class="sign-up" action="">
-            <div class="header">
-                Let's do this!
+        <form action="">
+            <div class="sign-up">
+                <div class="header">
+                    Let's do this!
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required placeholder="John" maxlength="40">
+                    </div>
+                    <div class="form-col">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required placeholder="Smith" maxlength="40">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="johnsmith@gmail.com" maxlength="40">
+                    </div>
+                    <div class="form-col">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="number" id="phone-number" name="phone-number" required placeholder="1234567890" maxlength="40" pattern="\d[1-9]">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-col">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </div>
             </div>
-            <div class="form-row">
-                <div class="form-col">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name" required placeholder="John">
-                </div>
-                <div class="form-col">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name" required placeholder="Smith">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-col">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="johnsmith@gmail.com">
-                </div>
-                <div class="form-col">
-                    <label for="phone-number">Phone Number</label>
-                    <input type="number" id="phone-number" name="phone-number" required placeholder="1234567890">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-col">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="form-col">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-                </div>
-            </div>
-        </form>
-
-        <div class="form-button">
             <button class="btn" type="submit">Create Account</button>
-        </div>
-        <div class="subscript">Already Have an Account? <a class="login-link" href="#">Log In</a></div>
+        </form>
+        
+        
+        <div class="subscript">Already Have an Account? <a class="link login-link" href="#">Log In</a></div>
     </div>
 </body>
 </html>
