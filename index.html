@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="image">
+        <img class="background-image" src="/images/forest.jpg" alt="Forest">
+        <div class="banner">
+            <img src="/images/icf_logo.png" alt="ICF Logo" class="logo-image">
+            <div class="banner-text">Immanuel Christian Fellowship</div>
+        </div>
+        <div class="credit">Photo by <a href="#" class="credit-author">Filip Zrnzević</a> on <a href="#" class="credit-author">Unsplash</a></div>
+    </div>
+    <div class="form"> 
+        <div class="heading">
+            <div class="header">
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started!
+            </div>
+            <div class="header">
+                You <em>know</em> you want to.
+            </div>
+        </div>
+
+        <form class="sign-up" action="">
+            <div class="header">
+                Let's do this!
+            </div>
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required placeholder="John">
+                </div>
+                <div class="form-col">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required placeholder="Smith">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="johnsmith@gmail.com">
+                </div>
+                <div class="form-col">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="number" id="phone-number" name="phone-number" required placeholder="1234567890">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-col">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+            </div>
+        </form>
+
+        <div class="form-button">
+            <button class="btn" type="submit">Create Account</button>
+        </div>
+        <div class="subscript">Already Have an Account? <a class="login-link" href="#">Log In</a></div>
+    </div>
 </body>
 </html>

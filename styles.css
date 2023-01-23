@@ -2,3 +2,129 @@
     padding: 0; 
     margin: 0;
 }
+
+body {
+    display: flex;
+}
+
+.image {
+    width: 300px;
+    display: flex;
+    position: relative;
+}
+
+.background-image {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.banner-text {
+    color: white;
+    font-size: 2rem;
+}
+
+.credit {
+    position: absolute;
+    text-align: center;
+    bottom: 1rem;
+    width: 100%;
+    color: white;
+}
+
+.logo-image {
+    height: 100px;
+    width: 100px;
+}
+
+.heading {
+    padding: 20px;
+}
+
+.header {
+    color: #444444;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    background-color: #eeeeee;
+}
+
+.sign-up {
+    background-color: #fcfcfc;
+    box-shadow: 2px 2px 5px 1px black;
+    padding: 1rem 3rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 7px;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    outline: none !important;
+    border-color: rgb(0, 171, 223);
+    box-shadow: 0 0 2px rgb(0, 171, 223);
+}
+
+
+.form-button, 
+.subscript {
+    padding: 20px;
+}
+
+.btn {
+    padding: 10px 40px;
+    border-radius: 5px;
+    background-color: rgb(0, 80, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgb(0, 10, 0); 
+}
+
+.btn:hover {
+    background-color: rgb(0, 100, 0);
+}
+
+.btn:active {
+    background-color: rgb(0, 50, 0);
+}
